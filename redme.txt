@@ -1,0 +1,10 @@
+1. Create Config Database
+sequelize init
+2. Create schema
+sequelize model:generate --name user --attributes username:string,password:string
+3. create table
+sequelize db:migrate
+4. delete table latest
+sequelize db:migrate:undo
+5. delete all table 
+sequelize db:migrate:undo:all
